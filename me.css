@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.image{
+img {
     max-width: 25%;
     max-height:15%;
     float: left;
