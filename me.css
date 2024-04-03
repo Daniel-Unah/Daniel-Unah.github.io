@@ -12,14 +12,7 @@ body{
     background-color: #e5eaf5;
     color: black;
 }
-img {
-    max-width: 15%;
-    max-height: 5%;
-}
-.image-container {
-    display: flex;
-    align-items: center; /* Vertically center the image and text */
-}
+
 
 .text{
     flex: 1; /* Allow the text to take up remaining space */
