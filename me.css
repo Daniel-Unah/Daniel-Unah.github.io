@@ -10,7 +10,7 @@
 body{
     font-family: "Montserrat", "Georgia",;
     background-color: #e5eaf5;
-    background-image: linear-gradient(to top right, #04151fff, #183a37ff, #aaabbcff, #c4f1beff, #e1d89fff);
+    background: linear-gradient(to top right, #04151fff, #183a37ff, #aaabbcff, #c4f1beff, #e1d89fff);
     color: black;
 }
 img {
