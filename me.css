@@ -44,6 +44,7 @@ nav ul li a {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
+    font-size: 1.2em; /* Adjust font size as needed */
 }
 
 nav ul li a:hover {
@@ -74,4 +75,17 @@ img {
 
 .text {
     font-size: large;
+}
+
+/* Add these rules for properly formatted bullet points */
+ul {
+    padding-left: 40px;
+}
+
+li {
+    list-style-type: disc;
+}
+
+p {
+    margin-bottom: 1em; /* Add spacing between paragraphs */
 }
