@@ -1,48 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-.center{
-    text-align: center;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.imgCenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-body{
+
+html, body {
+    height: 100%;
     font-family: "Work Sans";
     background-color: #e5eaf5;
     color: black;
 }
-img {
-    max-width: 15%;
-    max-height: 5%;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-.text{
-    font-size: large;
-}
 nav {
     background-color: #333;
     text-align: center;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
+
 nav ul li {
-    display: inline-block; /* Display list items horizontally */
+    margin: 0 10px;
 }
+
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
 }
+
 nav ul li a:hover {
     background-color: #555;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    max-width: 15%;
+    max-height: 5%;
+}
+
+.text {
+    font-size: large;
 }
