@@ -18,8 +18,9 @@ img {
     max-height: 5%;
 }
 
-.border{
-    border-style: ridge;
+.container {
+	width: 80%;
+	margin: 0 auto;
 }
 .text{
     font-size: large;
