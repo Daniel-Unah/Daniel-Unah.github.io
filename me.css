@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 .center{
     text-align: center;
 }
@@ -8,7 +9,7 @@
     width: 50%;
 }
 body{
-    font-family: "Montserrat", "Georgia",;
+    font-family: "Work Sans", "Montserrat", "Georgia",;
     background-color: #e5eaf5;
     color: black;
 }
