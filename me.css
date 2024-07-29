@@ -8,7 +8,7 @@
 
 html, body {
     height: 100%;
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
     background-color: #e5eaf5;
     color: black;
 }
@@ -52,8 +52,8 @@ nav ul li a:hover {
 
 .content {
     flex: 1;
-    overflow: auto;
     padding: 20px;
+    overflow: auto;
 }
 
 .center {
@@ -68,8 +68,8 @@ nav ul li a:hover {
 }
 
 img {
-    max-width: 15%;
-    max-height: 5%;
+    max-width: 100%;
+    height: auto;
 }
 
 .text {
