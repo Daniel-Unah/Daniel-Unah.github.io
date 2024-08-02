@@ -68,11 +68,6 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .text {
     font-size: large;
 }
