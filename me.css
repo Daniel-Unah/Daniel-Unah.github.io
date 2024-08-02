@@ -59,7 +59,16 @@ nav ul li a:hover {
 .center {
     text-align: center;
 }
+.homeText {
+    width: 60%; /* Set width for the text container */
+    padding-right: 20px; /* Add some space between text and image */
+    font-size: large;
+}
 
+.homeImage {
+    width: 35%; /* Set width for the image container */
+    text-align: right; /* Align image to the right */
+}
 .imgCenter {
     display: block;
     margin-left: auto;
