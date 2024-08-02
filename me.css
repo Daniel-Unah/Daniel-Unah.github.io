@@ -29,7 +29,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points in nav */
     margin: 0;
     padding: 0;
     display: flex;
@@ -80,11 +80,11 @@ img {
 }
 
 /* Add these rules for properly formatted bullet points */
-ul {
+.content ul {
     padding-left: 40px;
 }
 
-li {
+.content li {
     list-style-type: disc;
 }
 
