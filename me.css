@@ -64,8 +64,7 @@ nav ul li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%; 
-    height: 30%;
+    width: 15%;
     border-radius: 15px;
 }
 
@@ -80,4 +79,8 @@ nav ul li a:hover {
 
 .content li {
     list-style-type: disc;
+}
+
+p {
+    margin-bottom: 1em; /* Add spacing between paragraphs */
 }
