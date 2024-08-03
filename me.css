@@ -81,7 +81,3 @@ nav ul li a:hover {
 .content li {
     list-style-type: disc;
 }
-
-p {
-    margin-bottom: 1em; /* Add spacing between paragraphs */
-}
