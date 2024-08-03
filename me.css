@@ -60,7 +60,7 @@ nav ul li a:hover {
     display: flex; /* Create a flex container */
     flex-direction: row; /* Arrange children in a row */
     justify-content: space-between; /* Space between children */
-    align-items: flex-start; /* Align items at the start */
+    align-items: center; /* Align items at the center */
     padding: 30px;
 }
 
