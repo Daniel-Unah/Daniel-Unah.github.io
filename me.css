@@ -61,7 +61,7 @@ nav ul li a:hover {
     flex-direction: row; /* Arrange children in a row */
     justify-content: space-between; /* Space between children */
     align-items: flex-start; /* Align items at the start */
-    padding: 20px;
+    padding: 30px;
 }
 
 .center {
