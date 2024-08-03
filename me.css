@@ -79,10 +79,11 @@ nav ul li a:hover {
 .homeImage {
     width: 35%; /* Set width for the image container */
     text-align: right; /* Align image to the right */
+    height: 15%;
 }
 .imgCenter {
     width: 100%; /* Make image take full width of its container */
-    height: 90%;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -97,8 +98,4 @@ nav ul li a:hover {
 
 .content li {
     list-style-type: disc;
-}
-
-p {
-    margin-bottom: 1em; /* Add spacing between paragraphs */
 }
