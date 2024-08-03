@@ -56,34 +56,16 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.homeContent {
-    display: flex; /* Create a flex container */
-    flex-direction: row; /* Arrange children in a row */
-    justify-content: space-between; /* Space between children */
-    align-items: center; /* Align items at the center */
-    padding: 30px;
-}
-
 .center {
     text-align: center;
 }
-.homeText {
-    width: 60%; /* Set width for the text container */
-    padding-right: 20px; /* Add some space between text and image */
-    font-size: large;
-    display: flex; /* Make text container a flexbox */
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center items vertically */
-}
 
-.homeImage {
-    width: 35%; /* Set width for the image container */
-    text-align: right; /* Align image to the right */
-    height: 15%;
-}
 .imgCenter {
-    width: 100%; /* Make image take full width of its container */
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%; 
+    height: 30%;
     border-radius: 15px;
 }
 
