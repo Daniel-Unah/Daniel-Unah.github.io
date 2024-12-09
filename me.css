@@ -159,7 +159,7 @@ h2 {
 }
 
 .project-demos {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -173,7 +173,7 @@ h2 {
 
 .project-demo h4 {
     margin-bottom: 1rem;
-    color: #333;
+    color: rgb(0, 128, 128);
 }
 
 .project-demo video {
