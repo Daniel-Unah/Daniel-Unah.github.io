@@ -160,9 +160,14 @@ h2 {
 
 .project-demos {
     margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .project-demo {
+    flex: 1;
+    min-width: 300px;
     margin-bottom: 2rem;
 }
 
@@ -172,7 +177,8 @@ h2 {
 }
 
 .project-demo video {
-    max-width: 800px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
