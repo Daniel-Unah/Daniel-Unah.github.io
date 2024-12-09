@@ -158,6 +158,25 @@ h2 {
     font-weight: 600;
 }
 
+.project-demos {
+    margin-top: 2rem;
+}
+
+.project-demo {
+    margin-bottom: 2rem;
+}
+
+.project-demo h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.project-demo video {
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul li a {
