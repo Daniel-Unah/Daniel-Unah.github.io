@@ -30,11 +30,9 @@
 
       <div class="game-buttons">
         <button onclick="loadGame()">Play Game</button>
-        <button onclick="endGame()">End Game</button>
       </div>
 
-      <p>
-        For a better gameplay experience, make the game fullscreen using the button in the bottom right-hand corner. 2D wave-based survival game, inspired by Call of Duty zombies. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.
+      <p>Click the Play Game button to open the game up in a full screen window, and click the escape button to end the game. This is Wave Survival, a 2D wave-based survival game, inspired by Call of Duty Zombies I built for a Video Game Programming class at my school using Unity C#. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.
       </p>
 
       <p>
@@ -50,18 +48,47 @@
           const container = document.getElementById("game-container");
           container.innerHTML = `
             <iframe 
+              id="game-iframe"
               src="https://itch.io/embed-upload/13602770?color=333333"
               width="1280"
               height="780"
               frameborder="0"
-              allowfullscreen>
-            </iframe>`;
+              allow="fullscreen"
+            ></iframe>`;
+      
+          // Wait for the iframe to render before requesting fullscreen
+          setTimeout(() => {
+            const iframe = document.getElementById("game-iframe");
+            if (iframe.requestFullscreen) {
+              iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+              iframe.webkitRequestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+              iframe.mozRequestFullScreen();
+            } else if (iframe.msRequestFullscreen) {
+              iframe.msRequestFullscreen();
+            }
+          }, 100); // delay ensures iframe exists in the DOM
         }
       
         function endGame() {
           document.getElementById("game-container").innerHTML = "";
+          // Optionally exit fullscreen
+          if (document.fullscreenElement) {
+            document.exitFullscreen();
+          }
         }
+      
+        // Automatically stop the game when exiting fullscreen
+        document.addEventListener("fullscreenchange", () => {
+          const isFullscreen = document.fullscreenElement !== null;
+          if (!isFullscreen) {
+            endGame();
+          }
+        });
       </script>
+      
+      
       
 
       <h3>Swift Project Demos</h3>
