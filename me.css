@@ -207,18 +207,20 @@ h2 {
     margin-top: 24px;
   }
 
-  #game-container iframe {
-    max-width: 1280px;
+  .game-frame-wrapper {
     width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  #game-container iframe {
+    min-width: 1280px;
     height: 780px;
     border: none;
   }
   
-  .game-frame-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   @media (max-width: 768px) {
     nav ul li a {
