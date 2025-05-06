@@ -44,25 +44,25 @@
       <div class="game-frame-wrapper">
         <div id="game-container"></div>
       </div>
-
+      
       <script>
         function loadGame() {
           const container = document.getElementById("game-container");
           container.innerHTML = `
-            <div class="responsive-game-wrapper">
-                <iframe 
-                frameborder="0" 
-                src="https://itch.io/embed-upload/13602770?color=333333" 
-                allowfullscreen 
-                >
-                </iframe>
-            </div>`;
+            <iframe 
+              src="https://itch.io/embed-upload/13602770?color=333333"
+              width="100%" 
+              height="780"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>`;
         }
-
+      
         function endGame() {
           document.getElementById("game-container").innerHTML = "";
         }
       </script>
+      
 
       <h3>Swift Project Demos</h3>
       <div class="project-demos">

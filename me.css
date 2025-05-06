@@ -206,30 +206,19 @@ h2 {
   #game-container {
     margin-top: 24px;
   }
+
+  #game-container iframe {
+    max-width: 1280px;
+    width: 100%;
+    height: 780px;
+    border: none;
+  }
   
   .game-frame-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .responsive-game-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    margin: 24px auto;
-    padding-top: 60.9375%;
-  }
-  
-  .responsive-game-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
   
   @media (max-width: 768px) {
     nav ul li a {
