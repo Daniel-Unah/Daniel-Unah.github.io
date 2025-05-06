@@ -217,12 +217,14 @@ h2 {
     position: relative;
     width: 100%;
     max-width: 1280px;
-    aspect-ratio: 64 / 39; /* Matches 1280x780 */
     margin: 24px auto;
+    padding-top: 60.9375%;
   }
   
   .responsive-game-wrapper iframe {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: none;
