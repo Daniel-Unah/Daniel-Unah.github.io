@@ -26,31 +26,42 @@
                 <li>Detecting Malaria with machine learning in Python, using Tensorflow: <a href = "https://drive.google.com/drive/folders/1KifOYJQ8eH7DiU5lyMlXiWgK-RfmtsM4?usp=sharing">Link</a></li>
             </ul>
             <h3>Unity C# Video Game</h3>
+
+            <div style="text-align: center;">
             <button onclick="loadGame()">Play Game</button>
             <button onclick="endGame()">End Game</button>
-            <p>2D wave-based survival game, inspired by Call of Duty zombies. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.</p>
-            <p>Link to the game in Itch.io: <a href = "https://danielunah.itch.io/wave-survival">Link</a></p>
+            </div>
 
-            <div id="game-container"></div>
-          
+            <p>
+            2D wave-based survival game, inspired by Call of Duty zombies. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.
+            </p>
+
+            <p>
+            Link to the game on Itch.io: <a href="https://danielunah.itch.io/wave-survival" target="_blank">Link</a>
+            </p>
+
+            <!-- Centered game iframe container -->
+            <div id="game-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;"></div>
+
             <script>
-              function loadGame() {
+            function loadGame() {
                 const container = document.getElementById("game-container");
                 container.innerHTML = `
-                  <iframe 
+                <iframe 
                     frameborder="0" 
                     src="https://itch.io/embed-upload/13602770?color=333333" 
                     allowfullscreen 
                     width="1280" 
-                    height="720">
-                  </iframe>`;
-              }
-              function endGame() {
-                const container = document.getElementById("game-container");
-                container.innerHTML = ""; // Removes the iframe, stopping the game
+                    height="720"
+                    style="max-width: 100%; border: none;">
+                </iframe>`;
             }
-            </script>            
-            <br>
+
+            function endGame() {
+                document.getElementById("game-container").innerHTML = "";
+            }
+            </script>
+
             <h3>Swift Project Demos</h3>
             <div class="project-demos">
                 <div class="project-demo">
