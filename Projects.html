@@ -49,12 +49,14 @@
         function loadGame() {
           const container = document.getElementById("game-container");
           container.innerHTML = `
-            <iframe 
-              frameborder="0" 
-              src="https://itch.io/embed-upload/13602770?color=333333" 
-              allowfullscreen 
-              >
-            </iframe>`;
+            <div class="responsive-game-wrapper">
+                <iframe 
+                frameborder="0" 
+                src="https://itch.io/embed-upload/13602770?color=333333" 
+                allowfullscreen 
+                >
+                </iframe>
+            </div>`;
         }
 
         function endGame() {

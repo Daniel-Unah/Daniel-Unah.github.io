@@ -212,6 +212,23 @@ h2 {
     justify-content: center;
     align-items: center;
   }
+
+  .responsive-game-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    aspect-ratio: 64 / 39; /* Matches 1280x780 */
+    margin: 24px auto;
+  }
+  
+  .responsive-game-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  
   @media (max-width: 768px) {
     nav ul li a {
         padding: 8px 15px;
