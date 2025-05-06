@@ -27,6 +27,7 @@
             </ul>
             <h3>Unity C# Video Game</h3>
             <button onclick="loadGame()">Play Game</button>
+            <button onclick="endGame()">End Game</button>
 
             <div id="game-container"></div>
           
@@ -38,11 +39,16 @@
                     frameborder="0" 
                     src="https://itch.io/embed-upload/13602770?color=333333" 
                     allowfullscreen 
-                    width="960" 
-                    height="540">
+                    width="1280" 
+                    height="720">
                   </iframe>`;
               }
-            </script>            <br>
+              function endGame() {
+                const container = document.getElementById("game-container");
+                container.innerHTML = ""; // Removes the iframe, stopping the game
+            }
+            </script>            
+            <br>
             <h3>Swift Project Demos</h3>
             <div class="project-demos">
                 <div class="project-demo">
