@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daniel Unah</title>
-    <link rel="stylesheet" type="text/css" href="me.css" /> 
-    <link rel="icon" type="image/x-icon" href="headshot.jpeg">
+  <title>Daniel Unah</title>
+  <link rel="stylesheet" type="text/css" href="me.css" /> 
+  <link rel="icon" type="image/x-icon" href="headshot.jpeg">
 </head>
 <body>
-    <div class = 'wrapper'>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About Me.html">About Me</a></li>
-                <li><a href="Work Experience.html">Work Experience</a></li>
-                <li><a href="Contact Me.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        <div class = 'content'>
-            <h2 class="center">Projects</h2>
-            <h3>Links to some of my projects:</h3>
-            <ul>
-                <li>Weather app built using React.js and the OpenWeatherMap API: <a href = "https://daniel-unah.github.io/weather-app/">Link</a></li>
-                <li>To-Do list built using React.js and an API provided by my school, hosted on GitHub Pages: <a href = "https://wustl-cse204a-sp2025-section-2.github.io/09-todo-app-react-implementation-Daniel-Unah/">Link</a></li>
-                <li>Game of Nim app built using React.js and deployed with Vercel: <a href = "https://game-of-nim.vercel.app/">Link</a></li>
-                <li>Redesign of Lefty's Fried Rice's company website, a local St Louis restaurant: <a href = "https://wustl-cse204a-sp2025-section-2.github.io/06-brand-redesign-Daniel-Unah/#home">Link</a></li>
-                <li>Detecting Malaria with machine learning in Python, using Tensorflow: <a href = "https://drive.google.com/drive/folders/1KifOYJQ8eH7DiU5lyMlXiWgK-RfmtsM4?usp=sharing">Link</a></li>
-            </ul>
-            <h3>Unity C# Video Game</h3>
+  <div class='wrapper'>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About Me.html">About Me</a></li>
+        <li><a href="Work Experience.html">Work Experience</a></li>
+        <li><a href="Contact Me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <div class='content'>
+      <h2 class="center">Projects</h2>
+      <h3>Links to some of my projects:</h3>
+      <ul>
+        <li>Weather app built using React.js and the OpenWeatherMap API: <a href="https://daniel-unah.github.io/weather-app/">Link</a></li>
+        <li>To-Do list built using React.js and an API provided by my school, hosted on GitHub Pages: <a href="https://wustl-cse204a-sp2025-section-2.github.io/09-todo-app-react-implementation-Daniel-Unah/">Link</a></li>
+        <li>Game of Nim app built using React.js and deployed with Vercel: <a href="https://game-of-nim.vercel.app/">Link</a></li>
+        <li>Redesign of Lefty's Fried Rice's company website, a local St Louis restaurant: <a href="https://wustl-cse204a-sp2025-section-2.github.io/06-brand-redesign-Daniel-Unah/#home">Link</a></li>
+        <li>Detecting Malaria with machine learning in Python, using Tensorflow: <a href="https://drive.google.com/drive/folders/1KifOYJQ8eH7DiU5lyMlXiWgK-RfmtsM4?usp=sharing">Link</a></li>
+      </ul>
 
-            <h3 style="text-align: center;">Unity C# Video Game</h3>
+      <h3 class="center">Unity C# Video Game</h3>
 
-            <div style="text-align: center;">
-            <button onclick="loadGame()">Play Game</button>
-            <button onclick="endGame()">End Game</button>
-            </div>
+      <div class="game-buttons">
+        <button onclick="loadGame()">Play Game</button>
+        <button onclick="endGame()">End Game</button>
+      </div>
 
-            <p>
-            2D wave-based survival game, inspired by Call of Duty zombies. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.
-            </p>
+      <p>
+        2D wave-based survival game, inspired by Call of Duty zombies. In each wave, eliminate all enemies to open up the shop. Aim your weapon with the mouse and shoot by clicking, or enter the pause menu (escape key) and toggle auto-fire to have your player automatically shoot wherever you aim without any input. In between each wave, you can either buy a new weapon, upgrade your current weapons, or upgrade your health. Close the shop to start the next wave.
+      </p>
 
-            <p>
-            Link to the game on Itch.io: <a href="https://danielunah.itch.io/wave-survival" target="_blank">Link</a>
-            </p>
+      <p>
+        Link to the game on Itch.io: <a href="https://danielunah.itch.io/wave-survival" target="_blank">Link</a>
+      </p>
 
-            <!-- Game container now wrapped in a div with inline-block centering only -->
-            <div style="text-align: center; margin-top: 20px;">
-            <div id="game-container" style="display: inline-block;"></div>
-            </div>
+      <div class="game-frame-wrapper">
+        <div id="game-container"></div>
+      </div>
 
-            <script>
-            function loadGame() {
-                const container = document.getElementById("game-container");
-                container.innerHTML = `
-                <iframe 
-                    frameborder="0" 
-                    src="https://itch.io/embed-upload/13602770?color=333333" 
-                    allowfullscreen 
-                    width="1280" 
-                    height="800"
-                    style="max-width: 100%; border: none;">
-                </iframe>`;
-            }
+      <script>
+        function loadGame() {
+          const container = document.getElementById("game-container");
+          container.innerHTML = `
+            <iframe 
+              frameborder="0" 
+              src="https://itch.io/embed-upload/13602770?color=333333" 
+              allowfullscreen 
+              width="1280" 
+              height="800"
+              style="max-width: 100%; border: none;">
+            </iframe>`;
+        }
 
-            function endGame() {
-                document.getElementById("game-container").innerHTML = "";
-            }
-            </script>
+        function endGame() {
+          document.getElementById("game-container").innerHTML = "";
+        }
+      </script>
 
-
-            <h3>Swift Project Demos</h3>
-            <div class="project-demos">
-                <div class="project-demo">
-                    <h4>Drawing App</h4>
-                    <video width="100%" controls>
-                        <source src="Drawing App Demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                
-                <div class="project-demo">
-                    <h4>Movie Search App, built using Total Movie Database API</h4>
-                    <video width="100%" controls>
-                        <source src="Movie App Demo - Made with Clipchamp.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+      <h3>Swift Project Demos</h3>
+      <div class="project-demos">
+        <div class="project-demo">
+          <h4>Drawing App</h4>
+          <video width="100%" controls>
+            <source src="Drawing App Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
+        
+        <div class="project-demo">
+          <h4>Movie Search App, built using Total Movie Database API</h4>
+          <video width="100%" controls>
+            <source src="Movie App Demo - Made with Clipchamp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
+</html>
