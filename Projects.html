@@ -27,6 +27,8 @@
             </ul>
             <h3>Unity C# Video Game</h3>
 
+            <h3 style="text-align: center;">Unity C# Video Game</h3>
+
             <div style="text-align: center;">
             <button onclick="loadGame()">Play Game</button>
             <button onclick="endGame()">End Game</button>
@@ -40,8 +42,10 @@
             Link to the game on Itch.io: <a href="https://danielunah.itch.io/wave-survival" target="_blank">Link</a>
             </p>
 
-            <!-- Centered game iframe container -->
-            <div id="game-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;"></div>
+            <!-- Game container now wrapped in a div with inline-block centering only -->
+            <div style="text-align: center; margin-top: 20px;">
+            <div id="game-container" style="display: inline-block;"></div>
+            </div>
 
             <script>
             function loadGame() {
@@ -52,7 +56,7 @@
                     src="https://itch.io/embed-upload/13602770?color=333333" 
                     allowfullscreen 
                     width="1280" 
-                    height="720"
+                    height="800"
                     style="max-width: 100%; border: none;">
                 </iframe>`;
             }
@@ -61,6 +65,7 @@
                 document.getElementById("game-container").innerHTML = "";
             }
             </script>
+
 
             <h3>Swift Project Demos</h3>
             <div class="project-demos">
